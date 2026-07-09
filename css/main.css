@@ -1,0 +1,11 @@
+
+
+@import url(./base/variaveis.css);
+@import url(./base/padrao.css);
+
+@import url(./layout/header.css);
+@import url(./layout/grid.css);
+@import url(./layout/footer.css);
+
+
+img { max-width: 100%; display: block; }

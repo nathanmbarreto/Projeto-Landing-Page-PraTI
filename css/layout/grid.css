@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+    "header header"
+    "main menu-lateral "
+    "rodape rodape";
+    border: solid 1px;
+}
+
+header { grid-area: header; }
+main { grid-area: main; }
+aside { grid-area: menu-lateral; }
+footer { grid-area: rodape; }

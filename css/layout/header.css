@@ -1,0 +1,7 @@
+.cabecalho {
+    box-sizing: border-box;
+    display: flex;
+    max-height: 150px;
+    border-bottom: solid 5px var(--cor-destaque);
+    background-color: var(--cor-fundo);
+}
