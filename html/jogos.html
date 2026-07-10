@@ -23,19 +23,9 @@
     </header>
 
     <main >
-        
-        <div class="card-box">
-            <div class="card">1</div>
-            <div class="card">2</div>
-            <div class="card">3</div>
-            <div class="card">4</div>
-            <div class="card">5</div>
-            <div class="card">6</div>
-            <div class="card">7</div>
-            <div class="card">8</div>
-            <div class="card">9</div>
-            <div class="card">10</div>
-        </div>
+         <h2 style="text-align: center;">Jogos em Destaque</h2>
+    <div class="destaques-grid" id="jogos-container">
+    </div>
     </main>
 
     <aside class="menu-lateral">Menu Lateral</aside>
@@ -56,13 +46,6 @@
 
 </div>
 </body>
-<script>
-   const API_KEY = '85dda7666164477db072e294bed36865';
-const URL = `https://api.rawg.io{API_KEY}&search=Cyberpunk`;
-
-fetch(URL)
-  .then(response => response.json())
-  .then(data => console.log(data.results))
-  .catch(error => console.error('Erro:', error)); 
+<script src="../js/jogos.js">
 </script>
 </html>
