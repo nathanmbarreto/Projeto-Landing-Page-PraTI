@@ -1,4 +1,4 @@
 .menu-lateral{
-    border-left: solid 5px var(--cor-destaque);
+    border-right: solid 1px var(--cor-destaque);
     padding: 0 5px;
 }

@@ -1,4 +1,18 @@
-main{
-  min-height: 1000px;
-  padding: 10px;
+.card-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  height: 800px;
+  width: auto;
+  margin: 30px;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px white;
+
+
+
 }

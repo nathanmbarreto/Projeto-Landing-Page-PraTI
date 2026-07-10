@@ -4,13 +4,12 @@
 
 .container {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 4fr;
     grid-template-rows: auto 1fr auto;
     grid-template-areas: 
     "header header"
-    "main menu-lateral "
+    "menu-lateral main"
     "rodape rodape";
-    border: solid 1px;
 }
 
 header { grid-area: header; }

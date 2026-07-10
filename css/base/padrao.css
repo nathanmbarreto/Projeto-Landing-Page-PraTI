@@ -5,9 +5,9 @@ body {
   color: var(--cor-texto);
   background: var(--cor-fundo);
   line-height: 1.7;
-  max-width: 80%;
   margin: 0 auto;
   padding: 0 16px;
+  max-width: 1700px;
 }
 
 
