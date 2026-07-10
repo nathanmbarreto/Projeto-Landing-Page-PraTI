@@ -3,7 +3,7 @@ const BASE_URL = 'https://api.rawg.io/api/games'
 
 async function carregarDestaques() {
     try {
-        const response = await fetch(`${BASE_URL}?key=${API_KEY}&ordering=-metacritic&page_size=12`)
+        const response = await fetch(`${BASE_URL}?key=${API_KEY}&ordering=-metacritic`)
         const data = await response.json()
 
         mostrarJogos(data.results)
@@ -31,7 +31,7 @@ function mostrarJogos(jogos) {
 
         container.appendChild(jogoCard)
     })
-    
+
 }
 
 carregarDestaques()

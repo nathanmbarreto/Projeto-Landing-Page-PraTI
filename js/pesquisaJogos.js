@@ -1,28 +1,28 @@
-const API_KEY = '85dda7666164477db072e294bed36865';
-const BASE_URL = 'https://api.rawg.io/api/games';
+const API_KEY = '85dda7666164477db072e294bed36865'
+const BASE_URL = 'https://api.rawg.io/api/games'
 
 async function carregarJogos() {
   try {
-    const response = await fetch(`${BASE_URL}?key=${API_KEY}&ordering=-metacritic&page_size=12`);
-    const data = await response.json();
-    mostrarJogos(data.results, 'jogos-container');
+    const response = await fetch(`${BASE_URL}?key=${API_KEY}&ordering=-metacritic`)
+    const data = await response.json()
+    mostrarJogos(data.results, 'jogos-container')
   } catch (error) {
-    console.error('Erro ao carregar jogos: ', error);
+    console.error('Erro ao carregar jogos: ', error)
   }
 }
 
 function redirecionarBusca() {
-  const termo = document.getElementById('busca').value;
+  const termo = document.getElementById('busca').value
   if (!termo) {
-    alert("Digite o nome do jogo desejado!");
-    return;
+    alert("Digite o nome do jogo desejado!")
+    return
   }
-  window.location.href = `resultados.html?search=${encodeURIComponent(termo)}`;
+  window.location.href = `resultados.html?search=${encodeURIComponent(termo)}`
 }
 
 async function buscarJogos(termo) {
   try {
-    const response = await fetch(`${BASE_URL}?key=${API_KEY}&search=${termo}&page_size=6`);
+    const response = await fetch(`${BASE_URL}?key=${API_KEY}&search=${termo}`);
     const data = await response.json()
     mostrarJogos(data.results, 'jogos-busca')
   } catch (error) {
@@ -38,7 +38,7 @@ function mostrarJogos(jogos, containerId) {
 
   if (!jogos || jogos.length === 0) {
     container.innerHTML = '<p>Nenhum jogo encontrado.</p>'
-    return;
+    return
   }
 
   jogos.forEach(jogo => {
@@ -50,8 +50,8 @@ function mostrarJogos(jogos, containerId) {
       <h3>${jogo.name}</h3>
       <p>Nota no Metacritic: ${jogo.metacritic || 'N/A'}</p>
     `
-    container.appendChild(jogoCard);
-  });
+    container.appendChild(jogoCard)
+  })
 }
 
 window.onload = () => {
@@ -59,8 +59,8 @@ window.onload = () => {
   const termo = params.get('search')
 
   if (termo) {
-    buscarJogos(termo);
+    buscarJogos(termo)
   } else {
     carregarJogos()
   }
-};
+}
