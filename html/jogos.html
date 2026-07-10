@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Games ON</title>
     <link rel="stylesheet" href="..\css\main.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-    
+    <script src="../js/pesquisaJogos.js"></script>
+    <script src="../js/jogos.js"></script>
+
 </head>
+
 <body>
     <div class="container">
-    <header class="cabecalho">
-        <img class="logo" src="../assets/logotipoBranco.png" alt="GamesON">
-        
+        <header class="cabecalho">
+            <img class="logo" src="../assets/logotipoBranco.png" alt="GamesON">
+
             <div class="menu">
-                <a href="#Inicio">Inicio</a>
-                <a href="#Jogos">Jogos</a>
-                <div class="pesquisar"><input class="caixa_pesquisa" type="text" id="search" placeholder="Pesquisar"><button class="btn-pesquisar" type="submit">Pesquisar</button>
-                    
-            </div></div>
+                <a href="../html/index.html">Inicio</a>
+                <a href="../html/jogos.html">Destaques</a>
+                <div class="pesquisar">
+                    <input class="caixa_pesquisa" type="text" id="busca" placeholder="Pesquisar">
+                    <button class="btn-pesquisar" onclick="redirecionarBusca()" type="button">Pesquisar</button>
+                </div>
 
-    </header>
+        </header>
 
-    <main >
-         <h2 style="text-align: center;">Jogos em Destaque</h2>
-    <div class="destaques-grid" id="jogos-container">
+        <main>
+            <h2 style="text-align: center;">Jogos em Destaque</h2>
+            <div class="destaques-grid" id="jogos-container">
+            </div>
+        </main>
+
+        <footer class="rodape">
+            <ul>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+            </ul>
+            <ul>
+                <li>link5</li>
+                <li>link6</li>
+                <li>link7</li>
+                <li>link8</li>
+            </ul>
+        </footer>
+
     </div>
-    </main>
-
-    <aside class="menu-lateral">Menu Lateral</aside>
-
-    <footer class="rodape">
-        <ul>
-            <li>link1</li>
-            <li>link2</li>
-            <li>link3</li>
-            <li>link4</li>
-        </ul>
-    <ul>
-        <li>link5</li>
-        <li>link6</li>
-        <li>link7</li>
-        <li>link8</li>
-    </ul></footer>
-
-</div>
 </body>
-<script src="../js/jogos.js">
-</script>
+
+
+
 </html>
