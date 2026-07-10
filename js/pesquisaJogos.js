@@ -63,4 +63,4 @@ window.onload = () => {
   } else {
     carregarJogos()
   }
-};
+}
