@@ -1,0 +1,58 @@
+.cabecalho-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+    padding: 13px 0;
+border-bottom: solid 1px var(--cor-destaque);
+}
+
+.caixa-cadastro {
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    padding: 70px 100px;
+    margin-top: 150px;
+    box-shadow: 1px 1px 8px var(--cor-destaque);
+    border-radius: 17px;
+}
+
+.caixa-cadastro h3 {
+    align-self: center;
+    justify-items: center;
+    margin-bottom: 10px;
+}
+
+.caixa-cadastro input,
+button {
+    padding: 5px;
+    border-radius: 8px;
+    background-color: var(--cor-texto);
+
+}
+
+input::placeholder {
+    opacity: 1;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--cor-destaque);
+    box-shadow: 0 0 5px var(--cor-destaque);
+}
+
+.caixa-cadastro a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: var(--cor-fundo);
+    background-color: var(--cor-suave);
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.caixa-cadastro button:hover, a:hover{
+    background-color: var(--cor-destaque);
+    color: var(--cor-fundo);
+}
