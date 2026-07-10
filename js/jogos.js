@@ -24,7 +24,7 @@ function mostrarJogos(jogos) {
         jogoCard.classList.add('card')
 
         jogoCard.innerHTML = `
-        <img src="${imagem}" alt"${jogo.name}">
+        <img src="${imagem}" alt="${jogo.name}">
         <h3>${jogo.name}</h3>
         <p>Nota no Metacritic: ${jogo.metacritic || 'N/A'}</p>
         `
