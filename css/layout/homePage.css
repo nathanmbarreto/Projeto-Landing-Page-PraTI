@@ -35,6 +35,16 @@ button {
 
 }
 
+.caixa-cadastro a{
+    text-decoration: none;
+    margin-top: 45px;
+    text-align: center;
+    color: var(--cor-destaque);
+}
+
+.caixa-cadastro a:hover{
+    font-weight: bold;
+}
 
 input:focus {
     outline: none;
