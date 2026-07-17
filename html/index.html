@@ -7,19 +7,26 @@
     <title>GamesON | Home Page</title>
     <link rel="stylesheet" href="../css/main.css">
     <link href='https://fonts.googleapis.com/css?family=Josefin Sans' rel='stylesheet'>
-
+    
 </head>
 
 <body>
     <header class="cabecalho-home"><img src="../assets\logotipoBranco.png" alt=""></header>
 
-    <div class="caixa-cadastro">
-        <h3>Cadastre-se para novidades</h3>
-        <input type="email" placeholder="email@email.com" required>
-        <button type="submit">Cadastrar</button>
-        <a href=".\jogos.html">Não, obrigado! Seguir sem o cadastro</a>
-    </div>
+    <main class="caixa-cadastro">
+        <form id="cadastro" class="formulario">
+            <h3>Cadastre-se para novidades</h3>
+            <label for="nome" id="nome" required>Nome completo:</label>
+            <input type="text" id="nome" required>
 
+            <label for="email" id="nome" required>E-mail:</label>
+            <input type="email" id="email" required>
+
+          
+            <button type="submit" class="btn-cadastro">Cadastrar</button>
+        </form>
+    </main>
+<script src="../js/cadastro.js"></script>
 </body>
 
 </html>

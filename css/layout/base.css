@@ -1,6 +1,4 @@
-.destaques-grid,
-#jogos-container,
-#jogos-busca {
+.destaques-grid, #jogos-container, #jogos-busca {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 20px;

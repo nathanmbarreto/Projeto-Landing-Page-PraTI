@@ -7,7 +7,7 @@
 @import url(layout/grid.css);
 @import url(layout/footer.css);
 @import url(layout/homePage.css);
-@import url(layout/main.css);
+@import url(layout/base.css);
 
 img { max-width: 100%; display: block; }
 

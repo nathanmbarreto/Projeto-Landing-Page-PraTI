@@ -4,7 +4,7 @@
     justify-content: center;
     margin: 15px 0;
     padding: 13px 0;
-border-bottom: solid 1px var(--cor-destaque);
+    border-bottom: solid 1px var(--cor-destaque);
 }
 
 .caixa-cadastro {
@@ -17,6 +17,10 @@ border-bottom: solid 1px var(--cor-destaque);
     border-radius: 17px;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
 .caixa-cadastro h3 {
     align-self: center;
     justify-items: center;
@@ -31,28 +35,20 @@ button {
 
 }
 
-input::placeholder {
-    opacity: 1;
-    text-align: center;
-}
 
 input:focus {
     outline: none;
-    border-color: var(--cor-destaque);
-    box-shadow: 0 0 5px var(--cor-destaque);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transform: scale(1.03);
 }
 
-.caixa-cadastro a {
-    margin-top: 20px;
-    text-decoration: none;
-    color: var(--cor-fundo);
-    background-color: var(--cor-suave);
-    padding: 10px;
-    border-radius: 8px;
-    font-weight: bold;
-}
 
-.caixa-cadastro button:hover, a:hover{
+.caixa-cadastro button:hover{
     background-color: var(--cor-destaque);
     color: var(--cor-fundo);
+    cursor: pointer;
+    font-weight: bolder;
+}
+.btn-cadastro {
+    margin-top: 10px;
 }
