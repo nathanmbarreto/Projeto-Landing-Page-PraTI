@@ -27,6 +27,7 @@
     font-style: italic;
     border-radius: 5px;
     padding: 12px;
+    font-weight: bold;
     background-color: var(--cor-destaque);
 }
 
@@ -38,42 +39,4 @@
     border-radius: 8px;
     padding: 12px;
     background-color: var(--cor-texto);
-}
-
-.caixa_pesquisa {
-    padding: 15px;
-    font-size: 16px;
-    color: black;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    outline: none;
-    transition: all 0.3s ease;
-
-}
-
-.caixa_pesquisa:focus {
-    border-color: var(--cor-destaque);
-    background-color: #fff;
-    box-shadow: 0 0 5px var(--cor-destaque);
-    text-align: center;
-}
-
-.btn-pesquisar {
-    margin-left: 5px;
-    padding: 15px;
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--cor-texto);
-    background-color: var(--cor-destaque);
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.1s;
-}
-
-.btn-pesquisar:hover {
-    color: var(--cor-destaque);
-    background-color: var(--cor-texto);
-    text-align: center;
 }

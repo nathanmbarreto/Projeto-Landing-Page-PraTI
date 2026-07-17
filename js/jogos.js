@@ -3,7 +3,7 @@ const BASE_URL = 'https://api.rawg.io/api/games'
 
 async function carregarDestaques() {
     try {
-        const response = await fetch(`${BASE_URL}?key=${API_KEY}&ordering=-metacritic`)
+        const response = await fetch(`${BASE_URL}?key=${API_KEY}&dates=2026-01-01,2026-12-31&ordering=-rating`)
         const data = await response.json()
 
         mostrarJogos(data.results)
@@ -26,12 +26,12 @@ function mostrarJogos(jogos) {
         jogoCard.innerHTML = `
         <img src="${imagem}" alt="${jogo.name}">
         <h3>${jogo.name}</h3>
-        <p>Nota no Metacritic: ${jogo.metacritic || 'N/A'}</p>
+        <p>Nota: ${jogo.rating || 'N/A'}</p>
+        <p>Lançamento: ${jogo.released}</p>
         `
 
         container.appendChild(jogoCard)
     })
-
 }
 
 carregarDestaques()
